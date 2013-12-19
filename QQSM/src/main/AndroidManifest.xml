@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="upv.adm.qqsm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="upv.adm.qqsm.MainActivity"
+            android:label="@string/app_name_complete" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="upv.adm.qqsm.Credits"
+            android:label="@string/label_credits" >
+        </activity>
+        <activity
+            android:name="upv.adm.qqsm.Play"
+            android:label="@string/label_play" >
+
+        </activity>
+        <activity
+            android:name="upv.adm.qqsm.Settings"
+            android:label="@string/label_settings"
+            android:parentActivityName="upv.adm.qqsm.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="upv.adm.qqsm.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="upv.adm.qqsm.Scores"
+            android:label="@string/label_scores" >
+
+        </activity>
+    </application>
+
+</manifest>

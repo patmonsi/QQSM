@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="@string/SHARED_PREF_NAME_KEY"
+        android:title="@string/label_settings"
+        android:summary="@string/pref_name_summary"
+        android:defaultValue="@string/default_user_name"/>
+    <ListPreference
+        android:key="@string/SHARED_PREF_NUM_JOKERS"
+        android:title="@string/pref_title_help"
+        android:summary="@string/pref_help_summary"
+        android:entries="@array/numHelps"
+        android:entryValues="@array/numHelpsValues"
+        android:defaultValue="3" />
+    <PreferenceScreen
+        android:key="addFriends"
+        android:title="@string/pref_friends_title"
+        android:summary="@string/pref_friends_summary">
+        <intent android:action="es.serpat.wwtbam.Friends" />
+    </PreferenceScreen>
+</PreferenceScreen>
